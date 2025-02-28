@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Innoscript Case Study
+
+## Overview
+
+Welcome to the Innoscript Case Study! This project is a simple login page that navigates to a news feed. Please note that the login page does not check for credentials; it is purely a demonstration to showcase navigation to the news feed. The news feed allows users to filter articles by author, date, language, and keywords, providing a seamless and efficient way to access the information they are interested in. The application is built using modern web technologies and is designed to be responsive across all devices.
+
+## Technologies Used
+
+- **React (Next.js)**: A powerful React framework for building applications.
+- **TypeScript**: A superset of JavaScript that enables static typing for improved code quality.
+- **Tailwind CSS**: A utility-first CSS framework for designing aesthetically pleasing user interfaces.
+- **Jest & React Testing Library**: Tools for testing React components and applications.
+- **Docker**: Containerization platform for easy deployment and management of applications.
+
+## Features
+
+- **Login Page**: A simple user interface for user authentication (note: this page does not validate credentials).
+- **News Feed**: After logging in, users can view a curated list of news articles.
+- **Filter Options**: Users can filter the news feed based on:
+  - Author
+  - Date
+  - Language
+  - Keywords
+- **Responsive Design**: The application is built with a responsive design, ensuring optimal user experience on all screen sizes.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rodolfoserralha/innoscripta
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd innoscripta
+   ```
+
+3. Run the application using Docker:
+   ```bash
+   docker-compose up --build -d
+   ```
+
+4. Access the application in your browser at `http://localhost:3000`.
+
+## Running Tests
+
+To run the tests for this application, you can execute the following command in the project directory:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Considerations
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Time Constraints**: Unfortunately, I didn't have enough time to fully develop the project to my desired standards.
+- **Custom Hook**: I aimed to create a custom hook to manage the logic for the container, but it didn't yield the intended effect within the component.
+- **Routing Tests**: I intended to implement testing for the application routes, but time limitations prevented me from completing this feature.
+- **Api Sources**: I was unable to integrate multiple API sources into the application due to time constraints, which could enhance the variety and depth of the news articles displayed. Additionally, there is an unused route in the project that was left incomplete due to time limitations.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Acknowledgments
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for checking out the Innoscript Case Study. I appreciate your understanding regarding the project's limitations, and I hope you find it an insightful demonstration of the technologies used!
